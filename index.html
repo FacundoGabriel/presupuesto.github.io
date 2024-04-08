@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Presupuesto semanal  </title>
+</head>
+<body>
+    <div class="gasto_tittle">
+        <h1>Gasto Semanal</h1>
+    </div>
+    <section class="container_gasto">
+
+        <div class="presupuesto_lista">
+
+            <form class="info">
+
+                <div class="tittle_lista" id="agregar_hijo_gasto">
+                    <h1>Añade tus gastos aqui</h1>
+                </div>
+                <div class="gasto">
+                    <span>Gasto:</span>
+                    <input type="text" id="gasto" name="gasto" placeholder="Nombre gasto">
+                </div>
+                <div class="cantidad">
+                    <span>Cantidad:</span>
+                    <input type="text" id="cantidad" name="cantidad" placeholder="Cantidad en $">
+                </div>
+
+                <div class="btn_agregar">
+                    <input type="submit" id="submit" class="btn" placeholder="Agregar" value="Agregar">
+                </div>
+            </form>
+
+            <div class="listado">
+                <div class="tiitle_listado" id="agregar_hijo_listado">
+                    <h1>Listado</h1>
+                </div>
+                <div class="lista_gastos">
+                    <ul class="list_group"></ul>
+                </div>
+                
+                <div class="presupuesto">
+                    <p>Presupuesto: $</p>
+                    <span id="total"></span>
+                </div>
+
+                <div class="restante">
+                    <p>Restante: $</p>
+                    <span id="restante"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
